@@ -1,4 +1,3 @@
-from get_zip_ile_by_id import download_zip
 from get_json_from_zip import get_json_data
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os,json,requests,time
@@ -6,9 +5,7 @@ from send_file_to_bot import save_data,initilize_bot
 
 data_json = None
 
-def start_main(chat_id,bot_token):
-    global start,end
-    
+def start_main(chat_id,bot_token,start,end):    
     # Global parameters
     MAX_RETRIES = 3
     WAIT_SECONDS = 30
