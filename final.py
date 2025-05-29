@@ -8,7 +8,6 @@ data_json = None
 
 def start_main(chat_id,bot_token):
     global start,end
-    start,end = download_zip() 
     
     # Global parameters
     MAX_RETRIES = 3
