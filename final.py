@@ -7,6 +7,7 @@ from send_file_to_bot import save_data,initilize_bot
 data_json = None
 
 def start_main(chat_id,bot_token):
+    global start,end
     start,end = download_zip() 
     
     # Global parameters

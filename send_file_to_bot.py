@@ -10,7 +10,6 @@ CHUNK_SIZE = MAX_SIZE_MB * 1024 * 1024
 
 
 def save_data(bot,chat_id,data,start,end):
-
     file_path = f"{start}_{end}_data.pkl.gz"
 
     # Save data to compressed pickle locally
